@@ -1,11 +1,16 @@
-import Login from "./components/Login"
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Welcome from "./components/Welcome";
 
 function App() {
-
   return (
-    <Login />
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/welcome" element={<Welcome />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
