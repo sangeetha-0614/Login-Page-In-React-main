@@ -8,13 +8,11 @@ const Welcome = () => {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        fontFamily: "Arial",
+        fontSize: "32px",
+        fontWeight: "bold"
       }}
     >
-      <div style={{ textAlign: "center" }}>
-        <h1>🎉 Welcome!</h1>
-        <p>Login Successful.</p>
-      </div>
+      🎉 Welcome to the Dashboard!
     </div>
   );
 };
